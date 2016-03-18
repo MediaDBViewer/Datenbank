@@ -125,6 +125,7 @@ CREATE TABLE IF NOT EXISTS `FilmGenre` (
 CREATE TABLE IF NOT EXISTS `FilmSchauspieler` (
   `imdbID` char(7) DEFAULT NULL,
   `schauspielerID` char(7) DEFAULT NULL,
+  `role` char(255) DEFAULT NULL,
   KEY `imdbID` (`imdbID`),
   KEY `schauspielerID` (`schauspielerID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
